@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255, 192, 203, 0.43);
+}
+
+.contenedor{
+    margin: 20vh auto;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 0px 5px 0px #e9e1da;
+}
+
+.foto{
+    width: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+
+.foto-movil{
+    display: none;
+    width: 100%;
+    border-radius: 10px 10px 0 0px;
+}
+
+.texto{
+    width: 95%;
+}
+
+h4{
+    letter-spacing: 5px;
+    color: gray;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    width: 80%;
+    font-family: 'Fraunces', serif;
+}
+
+p{
+    color: gray;
+    width: 70%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.precios{
+    display: flex;
+    align-items: center;
+}
+
+.price1{
+    font-size: 2em;
+    color: #689c77;
+    font-weight: 600;
+    margin: 0;
+    font-family: 'Fraunces', serif;
+}
+
+.price2{
+    margin-left: 15px;
+    color: gray;
+    text-decoration: line-through;
+}
+
+.boton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 190px;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    border: none;
+    background-color: #3d8168;
+    cursor: pointer;
+}
+
+.boton:hover{
+    background-color: #1A4031;
+}
+
+.btn{
+
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.add{
+    margin-right: 10px;
+}
+
+
+@media only screen and (max-width: 450px){
+    .contenedor{
+    width: 390px;
+    flex-wrap: wrap;
+    gap: 0;
+    margin-top: 25px;
+    }
+
+    .foto{
+        display: none;
+    }
+    
+    .foto-movil{
+        display: block;    
+    }
+
+    .texto{
+        width: 100%;
+        margin-left: 35px;
+    }
+    
+
+    .boton{
+        width: 80%;
+    }
+}
